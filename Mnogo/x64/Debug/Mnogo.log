@@ -1,0 +1,20 @@
+﻿  MyForm.cpp
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(367,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(368,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(389,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(390,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(448,41): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(470,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(476,1): warning C4305: аргумент: усечение из "double" в "float"
+  Source.cpp
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(367,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(368,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(389,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(390,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(448,41): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(470,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\senya\source\repos\Mnogo\Mnogo\MyForm.h(476,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\senya\source\repos\Mnogo\Mnogo\Source.cpp(6,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Mnogo.vcxproj -> C:\Users\senya\source\repos\Mnogo\x64\Debug\Mnogo.exe

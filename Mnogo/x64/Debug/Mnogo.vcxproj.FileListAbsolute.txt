@@ -1,0 +1,4 @@
+C:\Users\senya\source\repos\Mnogo\Mnogo\x64\Debug\Mnogo.vcxproj.AssemblyReference.cache
+C:\Users\senya\source\repos\Mnogo\Mnogo\x64\Debug\Mnogo.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\senya\source\repos\Mnogo\Mnogo\x64\Debug\Mnogo.MyForm.resources
+C:\Users\senya\source\repos\Mnogo\Mnogo\x64\Debug\Mnogo.vcxproj.GenerateResource.cache
