@@ -22,10 +22,10 @@ namespace Mnogo {
 			//
 			//TODO: добавьте код конструктора
 			//
-			br = gcnew SolidBrush(Color::White);
+			br = gcnew SolidBrush(Color::Blue);
 			pbPlot->Image = gcnew Bitmap(pbPlot->Width, pbPlot->Height);
-			draw_pn = gcnew Pen(Color::Blue, 3);
-			br_pol = gcnew SolidBrush(Color::Blue);
+			draw_pn = gcnew Pen(Color::Red, 3);
+			br_pol = gcnew SolidBrush(Color::Red);
 
 			ar = gcnew array<PointF>(1);
 		}
@@ -64,6 +64,8 @@ namespace Mnogo {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ btnReturn;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ btnPL;
 
 
 
@@ -103,15 +105,17 @@ namespace Mnogo {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->btnReturn = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->btnPL = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbPlot))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pbPlot
 			// 
-			this->pbPlot->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->pbPlot->BackColor = System::Drawing::SystemColors::MenuHighlight;
 			this->pbPlot->Location = System::Drawing::Point(12, 12);
 			this->pbPlot->Name = L"pbPlot";
-			this->pbPlot->Size = System::Drawing::Size(501, 576);
+			this->pbPlot->Size = System::Drawing::Size(673, 614);
 			this->pbPlot->TabIndex = 0;
 			this->pbPlot->TabStop = false;
 			this->pbPlot->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::pb1_MouseClick);
@@ -138,7 +142,7 @@ namespace Mnogo {
 			// lbCoord
 			// 
 			this->lbCoord->AutoSize = true;
-			this->lbCoord->Location = System::Drawing::Point(531, 12);
+			this->lbCoord->Location = System::Drawing::Point(845, 367);
 			this->lbCoord->Name = L"lbCoord";
 			this->lbCoord->Size = System::Drawing::Size(0, 13);
 			this->lbCoord->TabIndex = 3;
@@ -147,7 +151,7 @@ namespace Mnogo {
 			// 
 			this->btnClearList->Font = (gcnew System::Drawing::Font(L"Segoe Script", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->btnClearList->Location = System::Drawing::Point(394, 598);
+			this->btnClearList->Location = System::Drawing::Point(468, 655);
 			this->btnClearList->Name = L"btnClearList";
 			this->btnClearList->Size = System::Drawing::Size(119, 55);
 			this->btnClearList->TabIndex = 4;
@@ -159,7 +163,7 @@ namespace Mnogo {
 			// 
 			this->btnPlot->Font = (gcnew System::Drawing::Font(L"Haettenschweiler", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->btnPlot->Location = System::Drawing::Point(12, 597);
+			this->btnPlot->Location = System::Drawing::Point(329, 655);
 			this->btnPlot->Name = L"btnPlot";
 			this->btnPlot->Size = System::Drawing::Size(133, 55);
 			this->btnPlot->TabIndex = 5;
@@ -193,7 +197,7 @@ namespace Mnogo {
 			// 
 			// btnUP
 			// 
-			this->btnUP->Location = System::Drawing::Point(744, 189);
+			this->btnUP->Location = System::Drawing::Point(833, 130);
 			this->btnUP->Name = L"btnUP";
 			this->btnUP->Size = System::Drawing::Size(61, 54);
 			this->btnUP->TabIndex = 8;
@@ -203,7 +207,7 @@ namespace Mnogo {
 			// 
 			// btnDOWN
 			// 
-			this->btnDOWN->Location = System::Drawing::Point(744, 321);
+			this->btnDOWN->Location = System::Drawing::Point(833, 257);
 			this->btnDOWN->Name = L"btnDOWN";
 			this->btnDOWN->Size = System::Drawing::Size(61, 58);
 			this->btnDOWN->TabIndex = 9;
@@ -213,7 +217,7 @@ namespace Mnogo {
 			// 
 			// btnLEFT
 			// 
-			this->btnLEFT->Location = System::Drawing::Point(678, 253);
+			this->btnLEFT->Location = System::Drawing::Point(764, 189);
 			this->btnLEFT->Name = L"btnLEFT";
 			this->btnLEFT->Size = System::Drawing::Size(64, 50);
 			this->btnLEFT->TabIndex = 10;
@@ -223,7 +227,7 @@ namespace Mnogo {
 			// 
 			// btnRIGHT
 			// 
-			this->btnRIGHT->Location = System::Drawing::Point(807, 253);
+			this->btnRIGHT->Location = System::Drawing::Point(900, 189);
 			this->btnRIGHT->Name = L"btnRIGHT";
 			this->btnRIGHT->Size = System::Drawing::Size(59, 50);
 			this->btnRIGHT->TabIndex = 11;
@@ -235,7 +239,7 @@ namespace Mnogo {
 			// 
 			this->btnRot->Font = (gcnew System::Drawing::Font(L"Verdana", 14.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->btnRot->Location = System::Drawing::Point(541, 76);
+			this->btnRot->Location = System::Drawing::Point(732, 41);
 			this->btnRot->Name = L"btnRot";
 			this->btnRot->Size = System::Drawing::Size(96, 58);
 			this->btnRot->TabIndex = 12;
@@ -248,7 +252,7 @@ namespace Mnogo {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"NSimSun", 14.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(531, 42);
+			this->label1->Location = System::Drawing::Point(691, 12);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(257, 19);
 			this->label1->TabIndex = 13;
@@ -256,7 +260,7 @@ namespace Mnogo {
 			// 
 			// tbAng
 			// 
-			this->tbAng->Location = System::Drawing::Point(794, 44);
+			this->tbAng->Location = System::Drawing::Point(848, 41);
 			this->tbAng->Name = L"tbAng";
 			this->tbAng->Size = System::Drawing::Size(100, 20);
 			this->tbAng->TabIndex = 14;
@@ -266,7 +270,7 @@ namespace Mnogo {
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Mongolian Baiti", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(541, 367);
+			this->button1->Location = System::Drawing::Point(248, 632);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 85);
 			this->button1->TabIndex = 15;
@@ -278,7 +282,7 @@ namespace Mnogo {
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Mongolian Baiti", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(541, 172);
+			this->button2->Location = System::Drawing::Point(610, 639);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 71);
 			this->button2->TabIndex = 16;
@@ -298,11 +302,37 @@ namespace Mnogo {
 			this->btnReturn->UseVisualStyleBackColor = true;
 			this->btnReturn->Click += gcnew System::EventHandler(this, &MyForm::btnReturn_Click);
 			// 
+			// button3
+			// 
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button3->Location = System::Drawing::Point(695, 540);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 74);
+			this->button3->TabIndex = 18;
+			this->button3->Text = L"-";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// btnPL
+			// 
+			this->btnPL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->btnPL->Location = System::Drawing::Point(695, 440);
+			this->btnPL->Name = L"btnPL";
+			this->btnPL->Size = System::Drawing::Size(72, 81);
+			this->btnPL->TabIndex = 19;
+			this->btnPL->Text = L"+";
+			this->btnPL->UseVisualStyleBackColor = true;
+			this->btnPL->Click += gcnew System::EventHandler(this, &MyForm::btnPL_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1249, 744);
+			this->Controls->Add(this->btnPL);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->btnReturn);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -411,25 +441,33 @@ namespace Mnogo {
 	private: System::Void btnUP_Click(System::Object^ sender, System::EventArgs^ e) {
 		move(0, -10);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
 	}
 	private: System::Void btnDOWN_Click(System::Object^ sender, System::EventArgs^ e) {
 		move(0, 10);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
 	}
 	private: System::Void btnLEFT_Click(System::Object^ sender, System::EventArgs^ e) {
 		move(-10, 0);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
 	}
 	private: System::Void btnRIGHT_Click(System::Object^ sender, System::EventArgs^ e) {
 		move(10, 0);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
 	}
 	void rotate(float rad) {
@@ -445,19 +483,24 @@ namespace Mnogo {
 		pbPlot->Refresh();
 	}
 	private: System::Void btnRot_Click(System::Object^ sender, System::EventArgs^ e) {
-		rotate(Convert::ToDouble(tbAng->Text) / 57.3);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
+		rotate(Convert::ToDouble(tbAng->Text) / 57.3);
+
 	}
 	void scale(float x, float y) {
 		array<float, 2>^ scal = gcnew array<float, 2>(3, 3);
 		scale_mat(origin, x, y, scal);
+		if (isPoint) {
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
+		}
 		for (int i = 0; i < ar->Length; i++) {
 			ar[i] = apply(ar[i], scal);
-		}
-		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
 		}
 		clear(pbPlot->Image, br);
 		Graphics^ gr;
@@ -467,22 +510,43 @@ namespace Mnogo {
 	}
 
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		scale(1.05, 1.05);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
+		scale(1.1, 1);
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		scale(0.95, 0.95);
 		if (isPoint) {
-			pointID = pointID = lbx->SelectedIndices[0];
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
 		}
+		scale(0.9, 1);
 	}
 	private: System::Void btnReturn_Click(System::Object^ sender, System::EventArgs^ e) {
 		pointID = 0;
 		origin.X = 0;
 		origin.Y = 0;
 		isPoint = false;
+	}
+	private: System::Void btnPL_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (isPoint) {
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
+		}
+		scale(1, 1.1);
+
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (isPoint) {
+			//pointID = pointID = lbx->SelectedIndices[0];
+			origin.X = Convert::ToDouble(ar[lbx->SelectedIndices[0]].X);
+			origin.Y = Convert::ToDouble(ar[lby->SelectedIndices[0]].Y);
+		}
+		scale(1, 0.9);
 	}
 };
 }
